@@ -1,11 +1,12 @@
 name: Testing on Ubuntu
-on:
-  push:
-    branches: [master]
-  pull_request:
-    branches: [master]
-  schedule:
-    - cron: '0 0 1 * *'
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: [master]
+#   pull_request:
+#     branches: [master]
+#   schedule:
+#     - cron: '0 0 1 * *'
 jobs:
   ruby-versions:
     uses: ruby/actions/.github/workflows/ruby_versions.yml@master
